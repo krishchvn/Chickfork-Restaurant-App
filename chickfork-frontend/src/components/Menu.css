@@ -1,0 +1,131 @@
+.menu > h1 {
+	margin-left: 15px;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	margin-top: 90px;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	font-size: 52px;
+	margin-bottom: 50px;
+}
+
+.menu__starters {
+	padding-bottom: 500px;
+}
+.menu__maincourse {
+	padding-bottom: 600px;
+}
+.menu__desserts {
+	padding-bottom: 500px;
+}
+
+.menu__starters > h1 {
+	margin: 10px 0px 15px 0px;
+	text-decoration: none;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	font-size: 42px;
+}
+.menu__maincourse > h1 {
+	margin: 100px 0px 15px 0px;
+	text-decoration: none;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	font-size: 42px;
+}
+.menu__desserts > h1 {
+	margin: 0px 0px 15px 0px;
+	text-decoration: none;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	font-size: 42px;
+}
+.menu__beverages > h1 {
+	margin: 60px 0px 15px 0px;
+	text-decoration: none;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	font-size: 42px;
+}
+
+.menu__img > img {
+	height: 200px;
+	width: 270px;
+	padding: 5px;
+	object-fit: contain;
+}
+
+.menu__card {
+	background-color: #fafafc;
+	display: flex;
+	box-shadow: 15px 15px 27px #e1e1e3;
+}
+
+.menu__row {
+	display: flex;
+	flex-direction: row;
+	column-count: 2;
+	margin: 10px;
+}
+
+.menu__column {
+	display: flex;
+	flex-direction: column;
+	float: left;
+	width: 50%;
+	padding: 0 10px;
+}
+
+.menu__name > h2 {
+	font-weight: 500;
+	padding-left: 10px;
+}
+.menu__description > p {
+	padding-left: 10px;
+	font-size: 15px;
+}
+.menu__price > h5 {
+	padding-left: 10px;
+	font-size: 20px;
+}
+.menu__credentials {
+	display: flex;
+}
+.menu__button {
+	margin-left: 135px;
+}
+.menu__button > button {
+	border: none;
+	background-color: #e60000;
+	font-size: 15px;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+	font-style: italic;
+	margin: 0px 10px 10px 10px;
+	width: max-content;
+}
+
+@media (max-width: 799px) {
+	.menu__column {
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+	}
+	.menu__card {
+		margin: 15px 0px;
+	}
+	.menu__button {
+		margin-left: 0;
+	}
+	.menu__button > button {
+		font-size: 10px;
+		width: 70px;
+	}
+}

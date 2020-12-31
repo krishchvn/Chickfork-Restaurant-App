@@ -1,0 +1,99 @@
+* {
+	box-sizing: border-box;
+}
+
+h5 {
+	margin: 0px;
+	font-size: 16px;
+	font-weight: 700;
+}
+
+p {
+	font-size: 12px;
+}
+
+.today__spc > h1 {
+	margin-left: 15px;
+	text-decoration: underline;
+	font-style: italic;
+	text-shadow: 0 0 3px #ff0000;
+	text-align: center;
+	margin-top: 90px;
+	padding-bottom: 30px;
+}
+
+.center {
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: -180px 30px -100px -15px;
+}
+.property-image-title {
+	z-index: 2;
+	text-align: center;
+	background-color: #fafafc;
+	font-weight: 800;
+}
+
+.property-card {
+	height: 350px;
+	width: 640px;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	border-radius: 16px;
+	overflow: hidden;
+	box-shadow: 15px 15px 27px #e1e1e3;
+}
+
+.property-image {
+	height: max-content;
+	padding: 10px 60px;
+	position: absolute;
+	top: 0px;
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+}
+
+.property-description {
+	background-color: #fafafc;
+	height: 12em;
+	width: 350px;
+	position: absolute;
+	bottom: 0;
+	transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+	margin-left: 30px;
+}
+
+.property-description > h6 {
+	font-weight: 700;
+	font-size: 32px;
+}
+
+.property-card:hover .property-description {
+	height: 0em;
+	padding: 0px 1em;
+}
+.property-card:hover .property-image {
+	height: 18em;
+}
+
+@media (max-width: 799px) {
+	.center {
+		display: flex;
+		flex-direction: column;
+		margin: 15px 5px;
+	}
+	.property-image {
+		background-size: contain;
+		right: 0;
+		width: max-content;
+	}
+}

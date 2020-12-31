@@ -1,0 +1,21 @@
+.checkout__title {
+	text-align: center;
+	font-family: inherit;
+	margin-top: 10px;
+	font-style: italic;
+}
+
+h6,
+h2 {
+	text-align: center;
+}
+
+.checkout {
+	display: flex;
+}
+@media (max-width: 799px) {
+	.checkout {
+		display: flex;
+		flex-direction: column;
+	}
+}

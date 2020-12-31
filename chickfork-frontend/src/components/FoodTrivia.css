@@ -1,0 +1,28 @@
+.foodTrivia {
+	border: 4px solid gray;
+	justify-content: center;
+	margin: 50px 80px;
+	width: auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.foodTrivia blockquote {
+	background: none;
+	color: gray;
+	font-family: Georgia, serif;
+	font-style: italic;
+	line-height: 1.4 !important;
+	margin: 0;
+	position: relative;
+	text-shadow: 0 1px white;
+	z-index: 600;
+}
+
+.foodTrivia > blockquote p {
+	color: #990000;
+	line-height: 1.4 !important;
+	text-align: center;
+	padding: 15px 20px 10px 20px;
+	text-shadow: 0 0 3px #ff0000;
+	font-size: 20px;
+}
