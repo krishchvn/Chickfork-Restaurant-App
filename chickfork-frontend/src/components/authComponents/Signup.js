@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import { withRouter } from 'react-router-dom';
 
-export default class Signup extends Component {
+class Signup extends Component {
 	constructor(props) {
 		super(props);
 
@@ -43,9 +44,14 @@ export default class Signup extends Component {
 
 		console.log(user.name, user.email);
 
-		axios
-			.post('http://localhost:8000/account/signup', user)
-			.then(res => console.log(res.data));
+		axios.post('http://localhost:8000/account/signup', user).then(res => {
+			console.log(res.data);
+			if (res.status === 200) {
+				this.props.history.push('/');
+			}
+			localStorage.setItem('jwt', res.data);
+			localStorage.setItem('user', JSON.stringify(res.data.user));
+		});
 	}
 
 	render() {
@@ -84,3 +90,5 @@ export default class Signup extends Component {
 		);
 	}
 }
+
+export default withRouter(Signup);

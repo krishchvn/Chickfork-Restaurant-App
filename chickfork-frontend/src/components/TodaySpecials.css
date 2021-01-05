@@ -20,6 +20,7 @@ p {
 	text-align: center;
 	margin-top: 90px;
 	padding-bottom: 30px;
+	z-index: 1;
 }
 
 .center {
@@ -27,7 +28,7 @@ p {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	margin: -180px 30px -100px -15px;
+	margin: -130px 30px -100px -15px;
 }
 .property-image-title {
 	z-index: 2;

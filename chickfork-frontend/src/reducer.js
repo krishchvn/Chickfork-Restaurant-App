@@ -4,7 +4,7 @@ export const initialState = {
 };
 
 export const getCartTotal = cart =>
-	cart?.reduce((amount, product) => product.price + amount, 0);
+	cart?.reduce((amount, product) => parseFloat(product.price) + amount, 0);
 
 function reducer(state, action) {
 	switch (action.type) {

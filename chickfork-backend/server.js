@@ -143,12 +143,5 @@ app.post('/account/login', async (req, res, next) => {
 	/* 	res.redirect('/'); */
 });
 
-// check current user
-const checkUser = async (req, res, next) => {
-	if (token) {
-	} else {
-	}
-};
-
 // listeners
 app.listen(port, () => console.log(`Listening to requests on ${port}`));

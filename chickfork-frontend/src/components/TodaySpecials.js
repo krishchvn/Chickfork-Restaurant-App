@@ -1,9 +1,9 @@
-import React, { useState } from 'react'
-import examples from './examples'
-import './TodaySpecials.css'
+import React, { useState } from 'react';
+import examples from './examples';
+import './TodaySpecials.css';
 
 const TodaySpecials = () => {
-	const [todaySpecials, setTodaySpecials] = useState(examples)
+	const [todaySpecials, setTodaySpecials] = useState(examples);
 
 	return (
 		<div className='today__spc'>
@@ -25,7 +25,7 @@ const TodaySpecials = () => {
 				))}
 			</div>
 		</div>
-	)
-}
+	);
+};
 
-export default TodaySpecials
+export default TodaySpecials;

@@ -4,6 +4,7 @@
 	background-color: white;
 	box-shadow: 0 8px 6px -6px #999;
 	justify-content: space-between;
+	padding-bottom: 20px;
 }
 
 .navbar__img1 {
@@ -22,33 +23,6 @@
 .navbar__img {
 	justify-content: flex-end;
 }
-.dropdown {
-	position: relative;
-	display: inline-block;
-	padding: 12px 15px;
-	font-family: Georgia, serif;
-	font-style: italic;
-}
-
-.dropdown-content {
-	display: none;
-	position: absolute;
-	background-color: #f9f9f9;
-	min-width: 120px;
-	box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-	padding: 12px 10px;
-	z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-	display: block;
-}
-
-.navbar__dropdowns {
-	padding: 10px;
-	margin-top: 70px;
-}
-
 button {
 	margin-right: 30px;
 }
@@ -80,6 +54,12 @@ button {
 	margin-left: -170px;
 }
 
+.loginsTokenPresent > h6 {
+	margin-left: -180px;
+}
+.loginsTokenAbsent > h6 {
+	text-align: left;
+}
 @media (max-width: 599px) {
 	.navbar__button {
 		width: 100%;
@@ -104,5 +84,9 @@ button {
 	.icons {
 		padding-top: 5px;
 		margin-left: 0px;
+	}
+	.loginsTokenPresent > h6 {
+		margin-top: 10px;
+		margin-left: 0;
 	}
 }
