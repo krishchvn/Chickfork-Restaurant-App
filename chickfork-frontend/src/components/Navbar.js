@@ -12,7 +12,7 @@ const Navbar = () => {
 	const [{ cart }] = useStateValue();
 	let history = useHistory();
 
-	console.log(cart);
+	//console.log(cart);
 
 	let jwt = localStorage.getItem('token');
 	let user = localStorage.getItem('user');

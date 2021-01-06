@@ -56,36 +56,81 @@ class Signup extends Component {
 
 	render() {
 		return (
-			<div>
-				<h3>Signup</h3>
-				<form onSubmit={this.onSubmit}>
-					<div className='form-group'>
-						<label>Name: </label>
-						<input
-							type='text'
-							className='form-control'
-							value={this.state.name}
-							onChange={this.onChangeName}
-						/>
-						<label>Email: </label>
-						<input
-							type='email'
-							className='form-control'
-							value={this.state.email}
-							onChange={this.onChangeEmail}
-						/>
-						<label>Password: </label>
-						<input
-							type='password'
-							className='form-control'
-							value={this.state.password}
-							onChange={this.onChangePassword}
-						/>
+			<div class='container'>
+				<div class='row'>
+					<div class='col-sm-9 col-md-7 col-lg-5 mx-auto'>
+						<div class='card card-signin my-5'>
+							<div class='card-body'>
+								<h5 class='card-title text-center'>Sign Up</h5>
+								<form class='form-signin' onSubmit={this.onSubmit}>
+									<div class='form-label-group'>
+										<input
+											type='text'
+											className='signup_name'
+											id='inputName'
+											value={this.state.name}
+											onChange={this.onChangeName}
+											class='form-control'
+											placeholder='Name'
+											required
+										/>
+										<label
+											for='inputName'
+											onclick="document.getElementById('inputName').focus();"
+										>
+											Name
+										</label>
+									</div>
+									<div class='form-label-group'>
+										<input
+											type='email'
+											className='signup__email'
+											id='inputEmail'
+											value={this.state.email}
+											onChange={this.onChangeEmail}
+											class='form-control'
+											placeholder='Email'
+											required
+										/>
+										<label
+											for='inputEmail'
+											onclick="document.getElementById('inputEmail').focus();"
+										>
+											Email
+										</label>
+									</div>
+
+									<div class='form-label-group'>
+										<input
+											type='password'
+											id='inputPassword'
+											className='signup__password'
+											value={this.state.password}
+											onChange={this.onChangePassword}
+											class='form-control'
+											placeholder='Password'
+											required
+										/>
+										<label
+											for='inputPassword'
+											onclick="document.getElementById('inputPassword').focus();"
+										>
+											Password
+										</label>
+									</div>
+
+									<button
+										class='btn btn-lg btn-danger btn-block text-uppercase'
+										value='Sign Up'
+										type='submit'
+									>
+										Sign Up
+									</button>
+								</form>
+							</div>
+						</div>
 					</div>
-					<div className='form-group'>
-						<input type='submit' value='Signup' className='btn btn-danger' />
-					</div>
-				</form>
+				</div>
 			</div>
 		);
 	}

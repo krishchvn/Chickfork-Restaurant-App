@@ -24,9 +24,11 @@ function App() {
 						<Checkout />
 					</Route>
 					<Route path='/account/signup'>
+						<Navbar />
 						<Signup />
 					</Route>
 					<Route path='/account/login'>
+						<Navbar />
 						<Login />
 					</Route>
 				</Switch>
